@@ -2,10 +2,10 @@ import Link from "next/link";
 import CarExplorer from "../components/car-explorer";
 
 const quickFacts = [
-  ["Teams", "11"],
-  ["Drivers", "22"],
-  ["Goal", "2 titles"],
-  ["Edge", "Setup + pace"]
+  ["Season rounds", "24"],
+  ["Model factors", "18"],
+  ["Output", "P1-P5"],
+  ["Refresh", "Live/beta"]
 ];
 
 export default function HomePage() {
@@ -14,18 +14,18 @@ export default function HomePage() {
       <section className="mx-auto grid w-full max-w-7xl gap-8 px-5 py-10 md:px-8 lg:grid-cols-[1.15fr_0.85fr] lg:py-14">
         <div className="overflow-hidden rounded-[2rem] border border-line bg-white shadow-panel">
           <div className="border-b border-line bg-brand px-6 py-4 text-sm font-medium uppercase tracking-[0.24em] text-white">
-            Introduction To Formula 1
+            Prediction Platform
           </div>
           <div className="space-y-8 px-6 py-8 md:px-10 md:py-10">
             <div className="space-y-5">
               <p className="text-sm font-semibold uppercase tracking-[0.3em] text-brand">
-                About The Sport
+                Race Winner Model
               </p>
               <h1 className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tight md:text-7xl">
-                Formula 1 is where elite driving meets extreme engineering.
+                Predict race winners before lights out.
               </h1>
               <p className="max-w-xl text-base leading-8 text-muted md:text-lg">
-                Fast cars, sharp strategy, tiny margins. F1Lab turns the sport into a cleaner, more visual experience.
+                F1Lab ranks win probability for every race, explains why P1 was selected, and compares predictions with actual race results.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">
@@ -56,13 +56,13 @@ export default function HomePage() {
           <div className="relative flex h-full min-h-[420px] flex-col justify-end p-6 md:p-8">
             <div className="max-w-md rounded-[1.5rem] border border-white/10 bg-black/35 p-5 backdrop-blur-md">
               <p className="text-sm font-semibold uppercase tracking-[0.28em] text-red-300">
-                Quick Facts
+                Prediction Snapshot
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight">
-                Speed, strategy, pressure.
+                Probability, confidence, explainability.
               </h2>
               <p className="mt-3 text-sm leading-7 text-white/75">
-                Every lap is a fight between driver skill, car balance, tire life, and timing.
+                Select any race to open a dedicated report with factor scores, model math, and P1-P5 comparison.
               </p>
             </div>
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
